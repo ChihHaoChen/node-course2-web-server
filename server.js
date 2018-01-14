@@ -5,6 +5,7 @@ const fs = require('fs');
 const port = process.env.PORT || 3000;
 
 let app = express();
+console.log(`The port number is ${port}`);
 
 hbs.registerPartials(__dirname + '/views/partials');
 app.set('view engine', 'hbs');
